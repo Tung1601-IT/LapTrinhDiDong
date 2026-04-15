@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="8dp"
+    android:background="@drawable/cell_border">
+
+    <TextView
+        android:id="@+id/tvOrderIndex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#424242"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvOrderId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="#424242"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="Truong"
+        android:textColor="#424242"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvOrderDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="10-04-2024"
+        android:textColor="#424242"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="22.990.000 đ"
+        android:textColor="#424242"
+        android:textSize="11sp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnEdit"
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:backgroundTint="#5C6BC0"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:text="Sửa"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDelete"
+            android:layout_width="32dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#EF5350"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:padding="0dp"
+            android:text="Xóa"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="9sp" />
+    </LinearLayout>
+</LinearLayout>

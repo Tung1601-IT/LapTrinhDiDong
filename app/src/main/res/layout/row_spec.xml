@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <TextView
+            android:id="@+id/tvSpecTitle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Màn hình"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvSpecValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6.7 inch"
+            android:textColor="#424242" />
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F5F5F7" />
+</LinearLayout>

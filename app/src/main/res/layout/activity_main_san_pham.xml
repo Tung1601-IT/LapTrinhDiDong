@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    tools:context=".MainActivitySanPham">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Sản phẩm"
+        android:textColor="#333333"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llHeaderActions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_background"
+            android:hint="Tìm kiếm ở đây..."
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnImport"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#03A9F4"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Nhập hàng"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            app:cornerRadius="24dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#03A9F4"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="Thêm mới"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            app:cornerRadius="24dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llHeaderActions">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- Table Header -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="#002D62"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="8dp">
+
+                    <TextView android:layout_width="40dp" android:layout_height="wrap_content" android:gravity="center" android:text="STT" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:gravity="center" android:text="Ảnh" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content" android:gravity="center" android:text="Dòng sản phẩm" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="150dp" android:layout_height="wrap_content" android:gravity="center" android:text="Model" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:gravity="center" android:text="IMEI" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:gravity="center" android:text="RAM" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="60dp" android:layout_height="wrap_content" android:gravity="center" android:text="ROM" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:gravity="center" android:text="Màn hình" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:gravity="center" android:text="Chất lượng" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:gravity="center" android:text="Vi xử lý" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:gravity="center" android:text="Pin" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="80dp" android:layout_height="wrap_content" android:gravity="center" android:text="Màu" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="50dp" android:layout_height="wrap_content" android:gravity="center" android:text="SL" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="100dp" android:layout_height="wrap_content" android:gravity="center" android:text="Giá" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                    <TextView android:layout_width="120dp" android:layout_height="wrap_content" android:gravity="center" android:text="Hành động" android:textColor="@android:color/white" android:textSize="13sp" android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

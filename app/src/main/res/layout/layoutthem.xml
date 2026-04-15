@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tieude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THÊM KHÁCH HÀNG"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#009688"
+            android:layout_marginBottom="5dp"/>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="5dp"
+            android:background="#009688"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"></View>
+
+        <EditText android:id="@+id/edtten"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Tên khách hàng" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giới tính:"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rggioitinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nam"
+                android:checked="true"
+                app:buttonTint="#009688"/>
+            <RadioButton
+                android:id="@+id/rbnu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Nữ"
+                app:buttonTint="#009688"/>
+        </RadioGroup>
+
+        <EditText android:id="@+id/edtemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText android:id="@+id/edtsdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Số điện thoại"
+            android:inputType="phone" />
+
+        <EditText android:id="@+id/edtdiachi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Địa chỉ" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_marginTop="20dp">
+
+            <Button android:id="@+id/btnhuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HỦY"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#009688"
+                android:layout_marginRight="10dp"/>
+
+            <Button android:id="@+id/btnluu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#009688"
+                android:text="LƯU"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
